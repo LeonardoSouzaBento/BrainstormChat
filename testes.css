@@ -1,0 +1,35 @@
+main{
+  position: relative;
+  height: 100vh;
+}
+main>div{
+    overflow: auto;
+    height: 200px;
+    width: 500px;
+    border: 1px dashed blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main>div>div{
+    display: inline-block;
+    width: 100px; height: 100px;
+    background: rgb(185, 185, 185);
+    margin: 10px;
+}
+
+/*
+const div = document.querySelector('.sua-div');
+div.scrollTop = div.scrollHeight; // Vai para o final vertical
+
+const div = document.querySelector('.sua-div');
+div.scrollLeft = div.scrollWidth; // Vai para o final horizontal
+
+window.onload = () => {
+  const div = document.querySelector('.sua-div');
+  // Rolar para o final vertical e horizontal
+  div.scrollTop = div.scrollHeight;
+  div.scrollLeft = div.scrollWidth;
+};
+*/
