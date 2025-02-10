@@ -20,11 +20,11 @@ body{
 header{
     width: 100%;
     background-color: rgb(99, 133, 98);
-    height: 115px;
+    height: 95px;
     padding-top: 5px;
 }
 header>div{
-    height: 100px;
+    height: 90px;
     margin: auto;
     margin-right: 6%;
     display: flex;
@@ -36,14 +36,14 @@ header>div>h1{
     color: white;
     font-weight: 500;
     text-shadow: 1px 1px 2px rgb(92, 92, 92);
-    font-size: 1.8em;
+    font-size: 1.7em;
 }
 header>div>p{
     font-style: italic;
     text-align: right;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px rgb(73, 73, 73);
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 div#temas{
@@ -63,7 +63,7 @@ div#temas{
             padding: 12px 20px;
             background-color: #bfbfbf;
             border-radius: 5px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             font-size: 1.15em;
             filter: sepia(0.5) hue-rotate(100deg) brightness(0.9);
         }
@@ -74,14 +74,14 @@ div#temas{
         width: 100%;
     }
        #div_desc>p{
-            height: 100px;
             padding: 8px 20px;
             line-height: 1.5em;
+            height: 50px;
         }
 
         div.recolher{
             width: 100%;
-            height: 40px;
+            height: 37px;
             font-size: 1.5em;
             font-weight: 600;
             background-color: #ababab;
@@ -106,43 +106,41 @@ div#temas{
     /*Botoes_temas*/
 
     div#botoes_tema{
-        width: 55%;
+        width: 90%;
         margin: auto;
-        margin-bottom: 10px;
-        margin-left: 5%;
         display: flex;
-        height: 40px;
-        justify-content: space-between;
+        height: 37px;
+        gap: 11px;
+        margin-bottom: 10px;
     }
     div#all_buttons{
-        width: 88%;
+        width: 90%;
         height: 100%;
         display: flex;
         justify-content: space-between;
     }
     div#all_buttons>button{
-        width: 40px;
+        width: 37px;
         height: 100%;
         display: inline-block;
         border-radius: 4px;
         border: none;
+        color: rgb(87, 87, 87);
         background-color: #bfbfbf;
         font-size: 0.85em;
     }
     div#button_add{
-        display: inline;
-        width: 45px;
+        width: 37px;
         height: 100%;
-        display: flex;
     }
     div#button_add>button{
-        width: 40px;
+        width: 100%;
         height: 100%;
         font-size: 1.2em !important;
         border-radius: 4px;
         border: none;
+        color: rgb(87, 87, 87);
         background-color: #bfbfbf;
-        margin-right: 0px;
     }
         .selecao{
             filter: sepia(1) hue-rotate(100deg) brightness(0.8) !important;
@@ -152,7 +150,6 @@ div#temas{
             box-sizing: border-box;
         }
 
-
 /*Usuarios*/
 div#userSection{
     height: auto;
@@ -161,50 +158,51 @@ div#userSection{
 div#for_users{
     width: 90%;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     background-color: rgb(227, 227, 227);
     display: flex;
-    gap: 20px;
+    height: 150px;
+    gap: 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 4px rgb(211, 211, 211);
-    padding-bottom: 20px;
-    padding-top: 15px;
+    padding-bottom: 7px;
 }
+    #for_adm, #for_rest_users{
+        height: 100%;
+    }
     #for_adm{
-        width: 185px;
-        height: 75px;
+        width: 65px;
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
     }
     #for_adm img {
-        width: 80px;
-        height: 80px;
+        height: 40%;
+        width: 60px;
         border-radius: 50%;
         filter: brightness(1.15);
         box-shadow: 2px 2px 4px rgb(134, 134, 134);
     }
     #for_rest_users{
-        width: 80%;
-        height: 100%;
+        width: 100%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;
         overflow-x: hidden;
     }
     #parte1,#parte2{
+        width: 100%;
         height: 50%;
         display: flex;
         overflow-x: hidden;
         box-sizing: border-box;
-        gap: 25px;
-    }
-    #parte2{
-       display: none;
+        padding: 5px 0px;
+        justify-content: space-evenly;
+        gap: 10px;
     }
     #parte1>img,#parte2>img{
-        height: 80px;
-        width: 80px;
+        height: 90%;
+        width: 60px;
         border-radius: 50%;
         box-shadow: 2px 2px 4px rgb(134, 134, 134);
         filter: brightness(1.15);
@@ -216,16 +214,16 @@ div#for_users{
         border: 2.5px solid #465d45;
     }
 
-    div#pesquisar{
-        height: 35px;
-        width: 90%;
-        margin: auto;
-        margin-bottom: 20px;
-        background-color: rgb(255, 255, 255);
-        border-radius: 5px;
-        display: flex;
-        position: relative;
-    }
+div#pesquisar{
+    height: 35px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+}
     div#pesquisar>p{
         color: rgb(121, 121, 121);
         padding: 5px 20px 0px 10px;
@@ -247,29 +245,25 @@ div#for_users{
         box-shadow: 0px 0px 10px rgb(207, 207, 207);
         margin-bottom: 30px;
     }
-    
-    div#pesquisar>p{
-        color: black;
-    }
 
     div#botoes_opni{
-        width: 50%;
+        width: 100%;
         margin-bottom: 10px;
         display: flex;
-        height: 40px;
+        height: 37px;
         gap: 15px;
     }
     
     div#botoes_opni>button{
-        width: 40px;
+        width: 37px;
         height: 100%;
         border-radius: 4px;
         border: none;
+        color: rgb(87, 87, 87);
         background-color: #bfbfbf;
         font-size: 0.85em;
     }
     div#user_name{
-       height: 40px;
        display: flex;
        flex-flow: row nowrap;
        background-color: #7bad97;

@@ -20,24 +20,30 @@ body{
 header{
     width: 100%;
     background-color: rgb(99, 133, 98);
-    height: 100px;
+    height: 115px;
+    padding-top: 5px;
 }
-header>h1{
-    padding: 15px 25px 10px 0px;
+header>div{
+    height: 100px;
+    margin: auto;
+    margin-right: 6%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+header>div>h1{
     text-align: right;
     color: white;
     font-weight: 500;
     text-shadow: 1px 1px 2px rgb(92, 92, 92);
-    font-size: 1.7em;
+    font-size: 1.8em;
 }
-header>p{
-    padding: 0px;
-    padding-right: 25px;
+header>div>p{
     font-style: italic;
     text-align: right;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px rgb(73, 73, 73);
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 div#temas{
@@ -52,28 +58,24 @@ div#temas{
     div#for_tema{
         width: 90%;
         margin: auto;
-        height: 120px;
-        margin-bottom: 25px;
     }
         #for_tema > p {
-            padding: 12px 0px 12px 20px;
+            padding: 12px 20px;
             background-color: #bfbfbf;
-            border-radius: 5px;
+            border-radius: 6px 6px 0px 0px;
             margin-bottom: 5px;
             font-size: 1.15em;
             filter: sepia(0.5) hue-rotate(100deg) brightness(0.9);
+
         }
     #div_desc{
         background-color: #bfbfbf;
-        border-radius: 5px;
-        height: 70px;
-        margin-bottom: 7px;
         position: relative;
         width: 100%;
     }
        #div_desc>p{
-            padding: 8px 0px;
-            padding-left: 20px;
+            height: 100px;
+            padding: 8px 20px;
             line-height: 1.5em;
         }
 
@@ -83,9 +85,9 @@ div#temas{
             font-size: 1.5em;
             font-weight: 600;
             background-color: #ababab;
-            border-radius: 0px 0px 5px 5px;
             display: flex;
             justify-content: center;
+            border-radius: 0px 0px 6px 6px;
         }
         div.recolher>span{
             height: 100%;
@@ -93,9 +95,7 @@ div#temas{
             font-size: 1em;
             line-height: 1.15em;
             font-weight: bolder;
-            border-radius: 0px 5px 5px 0px;
             box-sizing: border-box;
-            border-radius: 25%;
         }
         span.subir{
             display: none;
@@ -104,20 +104,22 @@ div#temas{
     /*Botoes_temas*/
 
     div#botoes_tema{
-        width: 90%;
+        width: 65%;
         margin: auto;
+        margin-bottom: 10px;
+        margin-left: 5%;
         display: flex;
-        height: 36px;
-        gap: 12px;
+        height: 37px;
+        justify-content: space-between;
     }
     div#all_buttons{
-        width: 90%;
+        width: 88%;
         height: 100%;
-        gap: 13px;
-        white-space: nowrap;
+        display: flex;
+        justify-content: space-between;
     }
     div#all_buttons>button{
-        width: 11%;
+        width: 37px;
         height: 100%;
         display: inline-block;
         border-radius: 4px;
@@ -128,12 +130,20 @@ div#temas{
         margin-right: 8px;
     }
     div#button_add{
-        width: 9.5%;
+        display: inline;
+        width: 45px;
+        height: 100%;
+        display: flex;
     }
     div#button_add>button{
-        width: 100%;
+        width: 37px;
         height: 100%;
+        font-size: 1.2em !important;
+        border-radius: 4px;
         border: none;
+        color: rgb(87, 87, 87);
+        background-color: #bfbfbf;
+        margin-right: 0px;
     }
         .selecao{
             filter: sepia(1) hue-rotate(100deg) brightness(0.8) !important;
@@ -143,13 +153,6 @@ div#temas{
             box-sizing: border-box;
         }
 
-        .mais{
-            font-size: 1.2em !important;
-            border-radius: 4px;
-            border: none;
-            color: rgb(87, 87, 87);
-            background-color: #bfbfbf;
-        }
 
 /*Usuarios*/
 div#userSection{
@@ -163,10 +166,11 @@ div#for_users{
     background-color: rgb(227, 227, 227);
     display: flex;
     height: 150px;
-    gap: 10px;
+    gap: 5%;
     border-radius: 5px;
     box-shadow: 2px 2px 4px rgb(211, 211, 211);
     padding-bottom: 7px;
+    padding-top: 7px;
 }
     #for_adm, #for_rest_users{
         height: 100%;
@@ -191,14 +195,12 @@ div#for_users{
         overflow-x: hidden;
     }
     #parte1,#parte2{
-        width: 100%;
         height: 50%;
         display: flex;
         overflow-x: hidden;
         box-sizing: border-box;
         padding: 5px 0px;
-        justify-content: space-between;
-        gap: 10px;
+        gap: 6%;
     }
     #parte1>img,#parte2>img{
         height: 90%;
@@ -246,15 +248,15 @@ div#pesquisar{
     }
 
     div#botoes_opni{
+        width: 70%;
         margin-bottom: 10px;
-        display: grid;
-        grid-template: 100% / repeat(7, 1fr);
-        height: 9vw;
-        gap: 3%;
+        display: flex;
+        height: 37px;
+        gap: 15px;
     }
     
     div#botoes_opni>button{
-        width: 100%;
+        width: 37px;
         height: 100%;
         border-radius: 4px;
         border: none;
@@ -267,7 +269,7 @@ div#pesquisar{
        flex-flow: row nowrap;
        background-color: #7bad97;
        margin-bottom: 5px;
-       border-radius: 4px;
+       border-radius: 7px 7px 0px 0px;
        position: relative;
     }
 
@@ -282,8 +284,8 @@ div#pesquisar{
     p#txt_opinion{
         padding: 10px 0px 20px 20px;
         background-color: #7bad97;
-        border-radius: 5px 5px 0px 0px;
     }
     div#opinion > div.recolher{
         background-color: #658d7b;
+        border-radius: 0px 0px 7px 7px;
     }

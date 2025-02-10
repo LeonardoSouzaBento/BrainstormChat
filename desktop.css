@@ -14,17 +14,23 @@
     padding: 0px;
     font-family: "Roboto", sans-serif;
 }
+::-webkit-scrollbar{
+    visibility: hidden;
+    width: 0px;
+}
 body{
     background-color:#e1e1e1;
 }
 header{
     width: 100%;
+    max-width: 1380px;
+    margin: auto;
     background-color: rgb(99, 133, 98);
     height: 115px;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 header>div{
-    height: 100px;
+    height: 90px;
     margin: auto;
     margin-right: 6%;
     display: flex;
@@ -36,7 +42,7 @@ header>div>h1{
     color: white;
     font-weight: 500;
     text-shadow: 1px 1px 2px rgb(92, 92, 92);
-    font-size: 1.8em;
+    font-size: 1.9em;
 }
 header>div>p{
     font-style: italic;
@@ -45,7 +51,11 @@ header>div>p{
     text-shadow: 1px 1px 2px rgb(73, 73, 73);
     font-size: 1em;
 }
-
+main{
+    width: 100%;
+    max-width: 1380px;
+    margin: auto;
+}
 div#temas{
     width: 100%;
     margin: auto;
@@ -74,9 +84,10 @@ div#temas{
         width: 100%;
     }
        #div_desc>p{
-            height: 100px;
-            padding: 8px 20px;
+            height: 110px;
+            padding: 10px 20px;
             line-height: 1.5em;
+            font-size: 1.1em;
         }
 
         div.recolher{
@@ -106,7 +117,7 @@ div#temas{
     /*Botoes_temas*/
 
     div#botoes_tema{
-        width: 55%;
+        width: 440px;
         margin: auto;
         margin-bottom: 10px;
         margin-left: 5%;
@@ -115,7 +126,7 @@ div#temas{
         justify-content: space-between;
     }
     div#all_buttons{
-        width: 88%;
+        width: 86%;
         height: 100%;
         display: flex;
         justify-content: space-between;
